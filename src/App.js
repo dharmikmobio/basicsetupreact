@@ -7,13 +7,16 @@ export class App extends Component{
     this.state = {
        hello:"hello world"
     }
+   
   }
-  
+  apple = () =>{
+      this.setState({hello:"hello india"})
+    }
   render(){
     return(
       <>
             <h1>{this.state.hello}</h1>
-            <button onClick={()=>this.setState({hello:"hello india"})}>Click to change class based</button>
+            <button onClick={()=>this.apple()}>Click to change class based</button>
       </>
     );
   }
