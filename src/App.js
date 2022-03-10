@@ -1,25 +1,24 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-export class App extends Component{
+export class App extends Component {
   constructor(props) {
     super(props)
   
     this.state = {
-       hello:"hello world"
+       data:0
     }
-   
   }
-  apple = () =>{
-      this.setState({hello:"hello india"})
-    }
-  render(){
-    return(
+  incress = () => {
+    this.setState({data:this.state.data+1})
+  }
+  render() {
+    return (
       <>
-            <h1>{this.state.hello}</h1>
-            <button onClick={()=>this.apple()}>Click to change class based</button>
+        <h1>{this.state.data}</h1>
+        <button onClick={()=>this.incress()}>class based incress</button>
       </>
-    );
+    )
   }
 }
 
-export default App;
+export default App
