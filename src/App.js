@@ -5,18 +5,21 @@ export class App extends Component {
     super(props)
   
     this.state = {
-       data:0
+       
+      data:0
+       
     }
   }
-  incress = () => {
+  apple = () => {
     this.setState({data:this.state.data+1})
-  }
+  } 
+ 
   render() {
     return (
-      <>
-        <h1>{this.state.data}</h1>
-        <button onClick={()=>this.incress()}>class based incress</button>
-      </>
+     <>
+       <h1>{this.state.data}</h1>
+       <button onClick={()=> this.apple()}>click here</button>
+     </>
     )
   }
 }
