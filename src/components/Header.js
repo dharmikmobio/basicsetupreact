@@ -11,6 +11,7 @@ function Header(){
            <h1>Hello {data}</h1>
            <button onClick={Update}>click to change by function</button>
            <button onClick={()=>alert("direct function called")}>click to change by function</button>
+           
         </>
     );
 }
