@@ -1,23 +1,18 @@
-import React, { Component } from 'react'
-import Header from "./components/Header"
+import React,{useState} from 'react'
+import Header from './components/Header'
 
-export class App extends Component {
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-      data:"Dharmik Patel"
-    }
+function App() {
+  const [data, setData] = useState("Dharmik Vasoya")
+  function update() {
+    setData("Dharmik Patel")
   }
- 
-  render() {
-    return (
-      <>
-          <Header name={this.state.data}/>
-          <button onClick={()=>this.setState({data:"DP"})}>Click to change</button>
-      </>
-    )
-  }
+  return (
+   <>
+        <Header name={data}/>
+        <button onClick={update}>Click to Change</button>
+
+   </>
+  )
 }
 
 export default App
