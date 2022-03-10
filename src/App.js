@@ -1,14 +1,16 @@
 import React from 'react'
 
-
 function App() {
-  
-   function data(val){
+    const [data,setData] = React.useState(null)
+
+    function datainput(val){
+        setData(val.target.value)
         console.log(val.target.value)
     }
   return (
     <>
-        <input type="text"onChange={data} />
+        <h1>{data}</h1>
+        <input type="text" onChange={datainput} />
     </>
   )
 }
