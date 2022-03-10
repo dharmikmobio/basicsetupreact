@@ -5,11 +5,13 @@ function App() {
   return (
     <>
         <div>
-            {data? <h1>hello World</h1> : null }
+            {
+                data? <h1>hello World</h1> : false
+            }
         </div>
         
-        <button onClick={()=>setData(false)}>HIDE</button>
-        <button onClick={()=>setData(true)}>SHOW</button>
+        <button onClick={() =>setData(!data)}> Toggle </button>
+        
     </>
   )
 }
