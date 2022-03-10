@@ -1,17 +1,15 @@
-import React,{useState} from 'react'
-import Header from './components/Header'
+import React from 'react'
+
 
 function App() {
-  const [data, setData] = useState("Dharmik Vasoya")
-  function update() {
-    setData("Dharmik Patel")
-  }
+  
+   function data(val){
+        console.log(val.target.value)
+    }
   return (
-   <>
-        <Header name={data}/>
-        <button onClick={update}>Click to Change</button>
-
-   </>
+    <>
+        <input type="text"onChange={data} />
+    </>
   )
 }
 
