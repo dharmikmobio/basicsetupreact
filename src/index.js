@@ -6,26 +6,6 @@ import ReactDOM from 'react-dom'
 ReactDOM.render(
   <>
     <p>this is main index file</p> 
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
-    {/* <p>this is main index file</p>  */}
     <Header/> <br/>     
     <App/>
   </>,document.getElementById("root")
