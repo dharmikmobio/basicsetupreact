@@ -9,14 +9,12 @@ export class App extends Component {
       data:"Dharmik Patel"
     }
   }
-  update(){
-    this.setState({data:"Dharmik Vasoya"})
-  }
+ 
   render() {
     return (
       <>
           <Header name={this.state.data}/>
-          <button onClick={()=>this.update()}>Click to change</button>
+          <button onClick={()=>this.setState({data:"DP"})}>Click to change</button>
       </>
     )
   }
