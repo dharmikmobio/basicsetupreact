@@ -1,16 +1,13 @@
-import React,{useState} from 'react'
+import React, { Component } from 'react'
 
-function Header() {
-    const [data, setData] = useState(0)
-    function updateData(){
-        setData(data+1)
-    }
-  return (
-    <>
-        <h1>{data}</h1>
-        <button onClick={updateData}>UpdateDATA</button>
-    </>
-  )
+export class Header extends Component {
+  render() {
+    return (
+      <>
+         <h1>Hello {this.props.name}</h1>
+      </>
+    )
+  }
 }
 
 export default Header

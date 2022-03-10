@@ -1,25 +1,20 @@
 import React, { Component } from 'react'
+import Header from "./components/Header"
 
 export class App extends Component {
   constructor(props) {
     super(props)
   
     this.state = {
-       
-      data:0
-       
+      data:"Dharmik Patel"
     }
   }
-  apple = () => {
-    this.setState({data:this.state.data+1})
-  } 
- 
   render() {
     return (
-     <>
-       <h1>{this.state.data}</h1>
-       <button onClick={()=> this.apple()}>click here</button>
-     </>
+      <>
+          <Header name={this.state.data}/>
+          <button onClick={()=>this.setState({data:"Dharmik Vasoya"})}>Click to change</button>
+      </>
     )
   }
 }
